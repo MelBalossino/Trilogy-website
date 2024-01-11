@@ -1,0 +1,107 @@
+.container {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 1.5em; /* Tamaño de fuente grande para el título */
+  margin-bottom: 20px;
+}
+
+.subtitles {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.subtitleBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subtitle {
+  font-size: 1em;
+}
+
+.line {
+  width: 60px; /* Línea corta debajo del subtítulo */
+  border: 1px solid white;
+  margin-top: 5px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.contentBlock {
+  text-align: center;
+}
+
+.icon {
+  margin: 0 auto 10px;
+  width: 50px; /* Tamaño del icono */
+  height: 50px; /* Tamaño del icono */
+  /* Para usar una imagen como icono, descomenta la siguiente línea */
+  /* background-image: url('path-to-your-icon.svg'); */
+  background-size: cover;
+  background-position: center;
+}
+
+.contentTitle {
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+
+.contentDescription {
+  font-size: 0.9em;
+}
+
+.footer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.hashtag {
+  font-size: 1.2em;
+}
+
+/* Estilos para pantallas más grandes */
+@media (min-width: 768px) {
+  .subtitles {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 40px;
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+  .content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .icon {
+    width: 60px;
+    height: 60px;
+  }
+}

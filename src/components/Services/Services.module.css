@@ -1,107 +1,169 @@
 .container {
   background-color: var(--primary-color);
   color: white;
-  padding: 20px;
-  font-family: 'Arial', sans-serif;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 3rem;
+}
+
+.section {
+  margin-bottom: 3rem;
 }
 
 .header {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.title {
-  font-size: 1.5em; /* Tamaño de fuente grande para el título */
-  margin-bottom: 20px;
-}
-
-.subtitles {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-.subtitleBlock {
+.header h2 {
+  font-size: 1.15rem;
+  margin: 0 8px;
+  color: var(--color-white);
+  font-weight: 400;
+}
+
+.arrowIcon {
+  font-size: 30px;
+}
+
+.underline {
+  border: 0;
+  height: 1px;
+  background-color: var(--color-silver);
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid white;
+}
+
+.service {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.service:hover .iconOQueFazemos {
+  color: var(--secondary-color);
+  background-color: white;
+  transform: scale(1.1);
+  box-shadow: 0 0 8px white;
+}
+
+.service:hover .iconComoFazemos {
+  color: var(--secondary-color);
+  background-color: white;
+  transform: scale(1.1);
+  box-shadow: 0 0 8px white;
+}
+
+.service:hover h3,
+.service:hover p {
+  color: white;
+  transform: scale(1.05);
+}
+
+.containerIcon {
+  display: flex;
   align-items: center;
 }
 
-.subtitle {
-  font-size: 1em;
+.iconOQueFazemos {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+  width: 60px;
+  height: 60px;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  margin-right: 20px;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-.line {
-  width: 60px; /* Línea corta debajo del subtítulo */
-  border: 1px solid white;
-  margin-top: 5px;
+.iconOQueFazemos:hover {
+  color: var(--secondary-color);
+  background-color: white;
+  transform: scale(1.1);
+  box-shadow: 0 0 8px white;
 }
 
-.content {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
+.service h3 {
+  font-size: 1.35rem;
+  margin-bottom: 5px;
+  color: var(--secondary-color);
+  font-family: var(--secondary-font);
+  font-weight: 300;
 }
 
-.contentBlock {
-  text-align: center;
+.service p {
+  font-size: 0.9rem;
+  font-family: var(--secondary-font);
+  color: var(--secondary-color);
+  font-weight: 300;
+  line-height: 1.5;
+
 }
 
-.icon {
-  margin: 0 auto 10px;
-  width: 50px; /* Tamaño del icono */
-  height: 50px; /* Tamaño del icono */
-  /* Para usar una imagen como icono, descomenta la siguiente línea */
-  /* background-image: url('path-to-your-icon.svg'); */
-  background-size: cover;
-  background-position: center;
+.service h3,
+.service p {
+  transition: color 0.3s, transform 0.3s;
+  transform-origin: left;
 }
 
-.contentTitle {
-  font-size: 1.2em;
-  margin: 5px 0;
+.iconComoFazemos {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  margin-right: 20px;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-.contentDescription {
-  font-size: 0.9em;
-}
-
-.footer {
-  margin-top: 30px;
-  text-align: center;
-}
-
-.hashtag {
-  font-size: 1.2em;
-}
-
-/* Estilos para pantallas más grandes */
-@media (min-width: 768px) {
-  .subtitles {
-    flex-direction: row;
-    justify-content: center;
-  }
-  
-  .content {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.iconComoFazemos:hover {
+  color: var(--secondary-color);
+  background-color: white;
+  transform: scale(1.1);
+  box-shadow: 0 0 8px white;
 }
 
 @media (min-width: 1024px) {
   .container {
-    padding: 40px;
+    display: flex;
+    justify-content: center;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-bottom: 7rem;
   }
 
-  .title {
-    font-size: 2em;
+  .section {
+    width: 33vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .content {
-    grid-template-columns: repeat(4, 1fr);
+  .header {
+    justify-content: center;
+    align-items: center;
   }
 
-  .icon {
-    width: 60px;
-    height: 60px;
+  .underline {
+    width: 90%;
+    position: relative;
+  }
+
+  .arrowIcon {
+    font-size: 35px;
+  }
+
+  .service h2 {
+    display: inline;
   }
 }

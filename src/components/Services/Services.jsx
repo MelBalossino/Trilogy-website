@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from './Services.module.css';
+import { motion } from 'framer-motion';
+import useScrollAnimation from '../../hooks/useScrollAnimation';
 import { BsArrowDownShort } from "react-icons/bs";
 
 import { BsDisplay, BsDatabase, BsClockHistory, BsLink, BsFillPersonCheckFill,  } from "react-icons/bs";
@@ -47,8 +49,23 @@ function Services () {
     }
   ]
 
+  const { ref, isVisible } = useScrollAnimation();
+
+  const variants = {
+    hidden: { y: 100, opacity: 0 },
+    visible: { y: 0, opacity: 1 },
+  };
+
+  
   return (
      <div className={styles.container}>
+      <motion.div
+      ref={ref}
+                initial="hidden"
+                animate={isVisible ? "visible" : "hidden"}
+                transition={{ duration: 0.5, delay: 0.8 }}
+                variants={variants}
+                >
       <div className={styles.section}>
         <div className={styles.header}>
            <BsArrowDownShort className={styles.arrowIcon} />
@@ -67,6 +84,14 @@ function Services () {
           </div>
         ))}
       </div>
+      </motion.div>
+      <motion.div
+      ref={ref}
+                initial="hidden"
+                animate={isVisible ? "visible" : "hidden"}
+                transition={{ duration: 0.5, delay: 0.8 }}
+                variants={variants}
+                >
       <div className={styles.section}>
         <div className={styles.header}>
           <BsArrowDownShort className={styles.arrowIcon} />
@@ -85,6 +110,7 @@ function Services () {
           </div>
         ))}
       </div>
+      </motion.div>
     </div>
   );
 }

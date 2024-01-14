@@ -4,16 +4,15 @@ import { GrLinkedinOption } from "react-icons/gr";
 
 
 const Footer = () => {
-    //
     return (
-
-        <footer className={styles.divFooter}>
-            <h2>Let's tech up together <BsArrowRight /></h2>
-            <div className={`${styles.divfooter} container`}>
-
-                <img className={styles.imgLogo} src='/images/trilogy_logo_2.png' alt="" />
+        <footer className={styles.container}>
+             <div className={styles.title}>
+            <h2>Let's tech up together <BsArrowRight className={styles.iconChevron} size={25}/></h2>
+            </div>
+            <div className={styles.containerSections}>
+                <img className={styles.imgLogo} src='/images/trilogy_logo_2.png' alt="Company Logo" />
                 <div className={styles.divSections}>
-                    <h3>Trilogy Solutions</h3>
+                    <h3>TRILOGY SOLUTIONS</h3>
                     <p>Serviços</p>
                     <p>info@trilogysolutions.com</p>
                 </div>
@@ -37,18 +36,20 @@ const Footer = () => {
                 <div className={styles.divSections}>
                     <h3>Conecte-se conosco</h3>
                     <div className={styles.divRedes}>
-                        <a href='https://www.facebook.com/PuraVidaPremiumTravelExperience/'> <p><GrLinkedinOption /></p> </a>
-                        <a href='https://instagram.com/puravidapremiumtravelxperience?igshid=MWZjMTM2ODFkZg=='> <p> <BsInstagram /> </p></a>
-                        <a href='https://www.facebook.com/PuraVidaPremiumTravelExperience/'> <p><BsFacebook /></p> </a>
-                        <a href='https://www.facebook.com/PuraVidaPremiumTravelExperience/'> <p><BsYoutube /></p> </a>
+                        <a href=''> <p><GrLinkedinOption className={styles.iconChevron} size={20}/></p> </a>
+                        <a href=''> <p> <BsInstagram className={styles.iconChevron} size={20}/> </p></a>
+                        <a href=''> <p><BsFacebook className={styles.iconChevron} size={20}/></p> </a>
+                        <a href=''> <p><BsYoutube className={styles.iconChevron} size={20}/></p> </a>
                         
                     </div>
 
                 </div>
             </div>
+            <div className={styles.copyright}>
             <hr className={styles.underline} />
             <p>Copyright © 2024 Digital Business Company</p>
             <p>TRILOGY SOLUTIONS All rights reserved</p>
+            </div>
         </footer>
 
 

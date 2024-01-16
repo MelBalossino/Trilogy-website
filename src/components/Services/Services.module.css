@@ -104,7 +104,6 @@
   color: var(--secondary-color);
   font-weight: 300;
   line-height: 1.5;
-
 }
 
 .service h3,
@@ -133,13 +132,44 @@
   box-shadow: 0 0 8px white;
 }
 
+.scrollingTextContainer {
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--primary-color);
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  box-sizing: border-box;
+}
+
+.scrollingText {
+  color: var(--color-white);
+  font-family: var(--primary-font);
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 0.8;
+  font-style: italic;
+  font-size: 5.5rem;
+  white-space: nowrap;
+  display: block;
+  animation: scroll-left 30s linear infinite;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 @media (min-width: 1024px) {
   .container {
     display: flex;
     justify-content: center;
-    padding-left: 7rem;
+    padding-left: 13rem;
     padding-right: 7rem;
-    padding-bottom: 7rem;
+    padding-bottom: 3rem;
   }
 
   .section {
@@ -155,7 +185,7 @@
   }
 
   .underline {
-    width: 90%;
+    width: 80%;
     position: relative;
   }
 
@@ -165,5 +195,15 @@
 
   .service h2 {
     display: inline;
+  }
+
+  .service p {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1350px){
+  .container {
+    padding-left: 18rem;
   }
 }

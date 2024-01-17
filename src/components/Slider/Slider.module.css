@@ -1,6 +1,6 @@
 .mySlider{
     margin-top: -70px;
-    height: 25rem;
+    height: 45rem;
 }
 
 .mySlider img{
@@ -31,6 +31,33 @@
     margin-top: 1rem;
     font-weight: 300;
 }
+
+.button {
+    display: flex;
+    align-items: center;
+}
+
+.titleSlider button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: var(--primary-color);
+    margin-top: 1.5rem;
+    padding: 8px 24px;
+    border: none;
+    color: var(--color-white);
+    font-size: 1rem;
+    font-family: var(--secondary-font);
+    font-weight: 300;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.titleSlider button:hover {
+    border-radius: 20px;
+}
+
 
 @media (min-width: 768px) {
     .titleSlider {

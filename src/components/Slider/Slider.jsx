@@ -3,7 +3,7 @@ import styles from './Slider.module.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Keyboard, Autoplay } from 'swiper/modules';
-
+import { BsArrowRight } from 'react-icons/bs'
 
 const Slider = () => {
     return (
@@ -31,6 +31,7 @@ const Slider = () => {
                     <section className={styles.titleSlider}>
                 <h1> Trilogy <br /> Solutions </h1>
                 <p>Desenvolvemos softwares e soluções de integração <br /> com entregas de alto padrão para sua empresa!</p>
+                <button>Conheça a Trilogy <BsArrowRight className={styles.iconChevron} size={25} /></button>
             </section>
                 </Swiper>
     )

@@ -99,16 +99,13 @@ const Footer = () => {
                             <h3>Conecte-se conosco</h3>
                             <div className={styles.divRedes}>
                                 <div className={styles.iconItem}>
-                                    <a href=''> <p><GrLinkedinOption className={styles.icon} /></p> </a>
+                                    <a href='https://www.linkedin.com/company/trilogy-solutions-ltda/about/' target='blank'> <p><GrLinkedinOption className={styles.icon} /></p> </a>
                                 </div>
                                 <div className={styles.iconItem}>
-                                    <a href=''> <p> <BsInstagram className={styles.icon} /> </p></a>
+                                    <a href='https://www.instagram.com/trilogysolutions_/' target='blank'> <p> <BsInstagram className={styles.icon} /> </p></a>
                                 </div>
                                 <div className={styles.iconItem}>
-                                    <a href=''> <p><BsFacebook className={styles.icon} /></p> </a>
-                                </div>
-                                <div className={styles.iconItem}>
-                                    <a href=''> <p><BsYoutube className={styles.icon} /></p> </a>
+                                    <a href='https://www.facebook.com/profile.php?id=100077314213655' target='blank'> <p><BsFacebook className={styles.icon} /></p> </a>
                                 </div>
                             </div>
                         </div>

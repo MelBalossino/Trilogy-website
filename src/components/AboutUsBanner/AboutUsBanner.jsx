@@ -12,7 +12,7 @@ function AboutUsBanner() {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id='sobre'>
       <motion.img
         ref={ref}
         initial="hidden"

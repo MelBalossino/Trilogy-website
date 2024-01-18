@@ -5,7 +5,9 @@ import 'swiper/css';
 import { Keyboard, Autoplay } from 'swiper/modules';
 import { BsArrowRight } from 'react-icons/bs'
 
+
 const Slider = () => {
+
     return (
                 <Swiper
                     slidesPerView={1}
@@ -14,15 +16,20 @@ const Slider = () => {
                         enabled: true,
                     }}
                     autoplay={{
-                        delay: 3000,
+                        delay: 4000,
                         disableOnInteraction: false
                     }}
                     loop={true}
                     modules={[Keyboard, Autoplay]}
                     className={styles.mySlider}
+                    id='slider'
                 >
                     <SwiperSlide >
-                            <img src="./images/banner-2.png" />
+                             <div className={styles.fondoSlider} >
+                             
+                             
+      <div className={styles.franjaAzul} ></div>
+      </div>
                     </SwiperSlide>
 
                     <SwiperSlide >

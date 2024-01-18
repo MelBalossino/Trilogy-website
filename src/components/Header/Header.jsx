@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-scroll';
 import { BsList, BsXLg } from 'react-icons/bs'; 
 import styles from './Header.module.css';
 import { BsFacebook, BsInstagram, BsArrowRight, BsYoutube } from 'react-icons/bs'
@@ -25,16 +26,18 @@ const Header = () => {
   return (
     <header className={isScrolled ? `${styles.header} ${styles.scrolled}` : styles.header}>
       <div className={styles.logo}>
+        <Link to='slider' spy={true} smooth={true} offset={-70} duration={500}>
         <img src="/images/trilogy_logo_2.png" alt="Logo" />
+        </Link>
       </div>
       <nav className={styles.navigation}>
         <ul className={isOpen ? `${styles.navLinks} ${styles.show}` : styles.navLinks}>
-          <li><a href="/servicos">Serviços</a></li>
-        <li><a href="/sobre">Sobre</a></li>
-        <li><a href="/carreiras">GLPI</a></li>
-        <li><a href="/tech-update">Tech Update</a></li>
-        <li><a href="/vem-ser">Vem Ser</a></li>
-        <li><a href="/contato">Contato</a></li>
+        <li><Link to="empresas" spy={true} smooth={true} offset={-70} duration={500}>Empresas</Link></li>
+        <li><Link to="sobre" spy={true} smooth={true} offset={-70} duration={500}>Sobre</Link></li>
+        <li><Link to="servicos" spy={true} smooth={true} offset={-70} duration={500}>Serviços</Link></li>
+        <li><Link to="glpi" spy={true} smooth={true} offset={-70} duration={500}>GLPI</Link></li>
+        <li><Link to="landing" spy={true} smooth={true} offset={-70} duration={500}>Landing Page</Link></li>
+        <li><Link to="contato" spy={true} smooth={true} offset={-70} duration={500}>Contato</Link></li>
         <div className={styles.divRedes}>
                                 <div className={styles.iconItem}>
                                     <a href='https://www.linkedin.com/company/trilogy-solutions-ltda/about/' target='blank'> <p><GrLinkedinOption className={styles.icon} /></p> </a>

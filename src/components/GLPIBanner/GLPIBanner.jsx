@@ -20,7 +20,7 @@ function GLPIBanner() {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="glpi">
       <motion.img
       ref={ref}
                 initial="hidden"

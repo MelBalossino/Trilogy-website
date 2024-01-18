@@ -19,7 +19,7 @@ const Footer = () => {
         visible: { y: 0, opacity: 1 },
     };
     return (
-        <footer className={styles.container}>
+        <footer className={styles.container} id='contato'>
             <div className={styles.containerFooter}>
                 <div className={styles.title}>
                     <motion.h2

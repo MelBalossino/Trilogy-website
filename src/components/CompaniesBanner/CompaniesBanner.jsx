@@ -18,7 +18,7 @@ function CompaniesBanner({ logos }) {
     };
 
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id="empresas">
             <motion.h2
                 ref={ref}
                 initial="hidden"

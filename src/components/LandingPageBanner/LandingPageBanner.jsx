@@ -12,7 +12,7 @@ function LandingPageBanner() {
   };
 
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id="landing">
             <motion.img
       ref={ref}
                 initial="hidden"

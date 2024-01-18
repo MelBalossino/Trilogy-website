@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import React, { useState } from "react";
 import styles from "./GLPIBanner.module.css";
 import benefits from "./benefitsData.js";
 import { motion } from 'framer-motion';
@@ -22,34 +22,33 @@ function GLPIBanner() {
   return (
     <div className={styles.container} id="glpi">
       <motion.img
-      ref={ref}
-                initial="hidden"
-                animate={isVisible ? "visible" : "hidden"}
-                transition={{ duration: 0.5 }}
-                variants={variants}
-src="/images/glpi.png" alt="GLPI logo"
-                ></motion.img>
+        ref={ref}
+        initial="hidden"
+        animate={isVisible ? "visible" : "hidden"}
+        transition={{ duration: 0.5 }}
+        variants={variants}
+        src="/images/glpi.png" alt="GLPI logo"
+      ></motion.img>
       <div className={styles.content}>
         <motion.h2
-        ref={ref}
-                initial="hidden"
-                animate={isVisible ? "visible" : "hidden"}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                variants={variants}
+          ref={ref}
+          initial="hidden"
+          animate={isVisible ? "visible" : "hidden"}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          variants={variants}
         >
-        <h2>GLPI</h2>
+          GLPI
         </motion.h2>
         <motion.p
-        ref={ref}
-                initial="hidden"
-                animate={isVisible ? "visible" : "hidden"}
-                transition={{ duration: 0.5, delay: 0.4 }}
-                variants={variants}
+          ref={ref}
+          initial="hidden"
+          animate={isVisible ? "visible" : "hidden"}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          variants={variants}
         >
-        <p>O GLPI é a solução que sua empresa precisa para gerenciar ativos e simplificar o suporte técnico. Com recursos de última geração, oferecemos uma alternativa de alta qualidade e totalmente sem mensalidades.
-        </p>
+          O GLPI é a solução que sua empresa precisa para gerenciar ativos e simplificar o suporte técnico. Com recursos de última geração, oferecemos uma alternativa de alta qualidade e totalmente sem mensalidades.
         </motion.p>
-        <h3 onClick={toggleBenefits}>
+        <h3 onClick={toggleBenefits} aria-label="Open benefits">
           Principais benefícios {isBenefitsOpen ? <BsArrowUpShort className={styles.iconChevron} size={25} /> : <BsArrowDownShort className={styles.iconChevron} size={25} />}
         </h3>
         {isBenefitsOpen && (

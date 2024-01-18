@@ -26,7 +26,7 @@ function CompaniesBanner({ logos }) {
                 transition={{ duration: 0.5 }}
                 variants={variants}
             >
-                <h2>Conheça algumas das empresas que impulsionaram seus negócios conosco</h2>
+                Conheça algumas das empresas que impulsionaram seus negócios conosco
             </motion.h2>
             <Swiper
                 modules={[Autoplay]}

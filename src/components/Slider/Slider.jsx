@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import styles from './Slider.module.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -38,7 +39,9 @@ const Slider = () => {
                     <section className={styles.titleSlider}>
                 <h1> Trilogy <br /> Solutions </h1>
                 <p>Desenvolvemos softwares e soluções de integração <br /> com entregas de alto padrão para sua empresa!</p>
+                <Link to="sobre" spy={true} smooth={true} offset={-70} duration={500}>
                 <button>Conheça a Trilogy <BsArrowRight className={styles.iconChevron} size={25} /></button>
+                </Link>
             </section>
                 </Swiper>
     )

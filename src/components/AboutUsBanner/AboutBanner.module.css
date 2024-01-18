@@ -19,7 +19,7 @@
     font-weight: 350;
     color: var(--color-white);
     margin-bottom: 0rem;
-    
+
 }
 
 .container p {
@@ -38,7 +38,7 @@
     font-weight: 400;
 }
 
-.container h3{
+.container h3 {
     font-size: 2.6rem;
     font-weight: 500;
     color: var(--color-white);
@@ -52,7 +52,8 @@
         padding-left: 3rem;
         padding-right: 3rem;
     }
-     .container p {
+
+    .container p {
         font-size: 1.15rem;
     }
 }
@@ -62,9 +63,11 @@
         padding: 7rem;
         padding-left: 13rem;
     }
+
     .container h2 {
         font-size: 5rem;
     }
+
     .container p {
         font-size: 1.25rem;
     }

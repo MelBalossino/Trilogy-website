@@ -27,7 +27,7 @@ function GLPIBanner() {
                 animate={isVisible ? "visible" : "hidden"}
                 transition={{ duration: 0.5 }}
                 variants={variants}
-src="/images/glpi.jpg" alt="GLPI logo"
+src="/images/glpi.png" alt="GLPI logo"
                 ></motion.img>
       <div className={styles.content}>
         <motion.h2

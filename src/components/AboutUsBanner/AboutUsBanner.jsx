@@ -30,7 +30,7 @@ function AboutUsBanner() {
         transition={{ duration: 0.5, delay: 0.2 }}
         variants={variants}
       >
-        <h2>Trilogy Solutions</h2>
+        Trilogy Solutions
       </motion.h2>
       <motion.p
         ref={ref}
@@ -39,9 +39,7 @@ function AboutUsBanner() {
         transition={{ duration: 0.5, delay: 0.4 }}
         variants={variants}
       >
-        <p>
-          A Trilogy desenvolve e comercializa soluções tecnológicas que geram maior valor aos negócios.
-        </p>
+        A Trilogy desenvolve e comercializa soluções tecnológicas que geram maior valor aos negócios.
       </motion.p>
       <motion.h4
         ref={ref}
@@ -50,7 +48,7 @@ function AboutUsBanner() {
         transition={{ duration: 0.5, delay: 0.6 }}
         variants={variants}
       >
-        <h4>LINHA DE SERVIÇOS</h4>
+        LINHA DE SERVIÇOS
       </motion.h4>
       <motion.h3
         ref={ref}
@@ -58,8 +56,9 @@ function AboutUsBanner() {
         animate={isVisible ? "visible" : "hidden"}
         transition={{ duration: 0.5, delay: 0.8 }}
         variants={variants}
+        className={styles.title}
       >
-        <h3 className={styles.title}>Conheça as soluções que fazem os negócios crescerem.</h3>
+        Conheça as soluções que fazem os negócios crescerem.
       </motion.h3>
     </div>
   );

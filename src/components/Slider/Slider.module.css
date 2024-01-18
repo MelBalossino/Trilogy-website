@@ -1,16 +1,16 @@
-.mySlider{
+.mySlider {
     margin-top: -70px;
     height: 35rem;
 }
 
-.mySlider img{
+.mySlider img {
     width: 100%;
     height: 100%;
     object-fit: cover !important;
 }
 
-.titleSlider{
-    position:absolute;
+.titleSlider {
+    position: absolute;
     top: 30%;
     padding-left: 2rem;
     z-index: 1;
@@ -18,18 +18,20 @@
     max-width: 80%;
 }
 
-.titleSlider h1{
+.titleSlider h1 {
     color: var(--color-white);
     font-size: 4rem;
     font-weight: 400;
+    animation: slideInFromRight .2s linear backwards .2s;
 }
 
-.titleSlider p{
+.titleSlider p {
     font-family: var(--secondary-font);
     font-size: 1rem;
     line-height: 1.5;
     margin-top: 1rem;
     font-weight: 300;
+    animation: slideInFromRight .2s linear backwards .4s;
 }
 
 .button {
@@ -52,72 +54,100 @@
     font-weight: 300;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    animation: slideInFromRight .2s linear backwards .6s;
 }
 
 .titleSlider button:hover {
     border-radius: 20px;
 }
 
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .fondoSlider {
-  background-color: black;
-  width: 100%; /* Asegúrate de que tiene anchura */
-  height: 100vh;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
 }
 
 @keyframes moveAndShrink {
-  0%, 100% {
-    border-radius: 0%;
-    transform: translate(0, 0) scale(1);
-  }
-  50% {
-    border-radius: 50%;
-    transform: translate(50%, 50%) scale(0.5);
-  }
+
+    0%,
+    100% {
+        border-radius: 0%;
+        transform: translate(0, 0) scale(1);
+    }
+
+    50% {
+        border-radius: 50%;
+        transform: translate(50%, 50%) scale(0.5);
+    }
 }
 
 .franjaAzul {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: var(--primary-color); /* Cambia esto por tu imagen o color de la franja */
-  animation: moveAndShrink 5s infinite; /* Ajusta el tiempo como necesites */
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--primary-color);
+    animation: moveAndShrink 5s infinite;
 }
-
-
 
 
 @media (min-width: 768px) {
     .titleSlider {
         padding-left: 3rem;
     }
-     .titleSlider p {
+
+    .titleSlider p {
         font-size: 1.15rem;
     }
 }
 
-@media (min-width: 992px){
-    .mySlider{
+@media (min-width: 992px) {
+    .mySlider {
         height: 100vh;
     }
 
-    .titleSlider{
+    .titleSlider {
         left: 5%;
         top: 35%;
     }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
+    .mySlider {
+        height: 65rem;
+    }
 
-    .titleSlider{
-        
+    .fondoSlider {
+        height: 65rem;
+    }
+
+    .franjaAzul {
+        height: 65rem;
+    }
+
+    .titleSlider {
+
         padding-left: 7rem;
     }
-    .titleSlider h1{
+
+    .titleSlider h1 {
         font-size: 6rem;
     }
-    .titleSlider p{
+
+    .titleSlider p {
         font-size: 1.25rem;
     }
 }

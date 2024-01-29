@@ -16,59 +16,51 @@ function Services() {
 
   return (
     <>
-      <div className={styles.container} id="servicos">
-        <motion.div
-          ref={ref}
-          initial="hidden"
-          animate={isVisible ? "visible" : "hidden"}
-          transition={{ duration: 0.5, delay: 0.8 }}
-          variants={variants}
-        >
-          <div className={styles.section}>
-            <div className={styles.header}>
-              <BsArrowDownShort className={styles.arrowIcon} />
-              <h2>O QUE FAZEMOS</h2>
-            </div>
-            <hr className={styles.underline} />
-            {oQueFazemos.map((service, index) => (
-              <div className={styles.service} key={index}>
-                <div className={styles.containerIcon}>
-                  <div className={styles.iconOQueFazemos}>{service.icon}</div>
-                </div>
-                <div>
-                  <h3>{service.title}</h3>
-                  <p>{service.description}</p>
-                </div>
+      <div className={styles.container}>
+        <div className={styles.section}>
+          <motion.div className={styles.header} ref={ref}
+            initial="hidden"
+            animate={isVisible ? "visible" : "hidden"}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            variants={variants}>
+            <BsArrowDownShort className={styles.arrowIcon} />
+            <h2>O QUE FAZEMOS</h2>
+          </motion.div>
+          <hr className={styles.underline} />
+          {oQueFazemos.map((service, index) => (
+            <div className={styles.service} key={index}>
+              <div className={styles.containerIcon}>
+                <div className={styles.iconOQueFazemos}>{service.icon}</div>
               </div>
-            ))}
-          </div>
-        </motion.div>
-        <motion.div
-          ref={ref}
-          initial="hidden"
-          animate={isVisible ? "visible" : "hidden"}
-          transition={{ duration: 0.5, delay: 0.8 }}
-          variants={variants}
-        >
-          <div className={styles.section}>
-            <div className={styles.header}>
-              <BsArrowDownShort className={styles.arrowIcon} />
-              <h2>COMO FAZEMOS</h2>
-            </div>
-            <hr className={styles.underline} />
-            {comoFazemos.map((service, index) => (
-              <div className={styles.service} key={index}>
-                <div className={styles.containerIcon}>
-                  <div className={styles.iconComoFazemos}>{service.icon}</div>
-                </div>
-                <div>
-                  <h3>{service.title}</h3>
-                  <p>{service.description}</p>
-                </div>
+              <div>
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
               </div>
-            ))}
-          </div>
-        </motion.div>
+            </div>
+          ))}
+        </div>
+        <div className={styles.section}>
+          <motion.div className={styles.header} ref={ref}
+            initial="hidden"
+            animate={isVisible ? "visible" : "hidden"}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            variants={variants}>
+            <BsArrowDownShort className={styles.arrowIcon} />
+            <h2>COMO FAZEMOS</h2>
+          </motion.div>
+          <hr className={styles.underline} />
+          {comoFazemos.map((service, index) => (
+            <div className={styles.service} key={index}>
+              <div className={styles.containerIcon}>
+                <div className={styles.iconComoFazemos}>{service.icon}</div>
+              </div>
+              <div>
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
       <div className={styles.scrollingTextContainer}>
         <div className={styles.scrollingText}>

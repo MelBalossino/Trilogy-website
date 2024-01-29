@@ -12,41 +12,26 @@ function AboutUsBanner() {
   };
 
   return (
-    <div className={styles.container} id='sobre'>
-      <motion.img
+    <div className={styles.container}  >
+      <img
+        src="/images/trilogy_logo_2.png"
+        alt="Company Logo"
+        className={styles.logo}
+        id='sobre'
+      />
+      <h2>
+        Trilogy Solutions
+      </h2>
+      <p>
+        A Trilogy desenvolve e comercializa soluções tecnológicas que geram maior valor aos negócios.
+      </p>
+      <motion.h4
         ref={ref}
         initial="hidden"
         animate={isVisible ? "visible" : "hidden"}
         transition={{ duration: 0.5 }}
         variants={variants}
-        src="/images/trilogy_logo_2.png"
-        alt="Company Logo"
-        className={styles.logo}
-      />
-      <motion.h2
-        ref={ref}
-        initial="hidden"
-        animate={isVisible ? "visible" : "hidden"}
-        transition={{ duration: 0.5, delay: 0.2 }}
-        variants={variants}
-      >
-        Trilogy Solutions
-      </motion.h2>
-      <motion.p
-        ref={ref}
-        initial="hidden"
-        animate={isVisible ? "visible" : "hidden"}
-        transition={{ duration: 0.5, delay: 0.4 }}
-        variants={variants}
-      >
-        A Trilogy desenvolve e comercializa soluções tecnológicas que geram maior valor aos negócios.
-      </motion.p>
-      <motion.h4
-        ref={ref}
-        initial="hidden"
-        animate={isVisible ? "visible" : "hidden"}
-        transition={{ duration: 0.5, delay: 0.6 }}
-        variants={variants}
+        id='servicos'
       >
         LINHA DE SERVIÇOS
       </motion.h4>
@@ -54,7 +39,7 @@ function AboutUsBanner() {
         ref={ref}
         initial="hidden"
         animate={isVisible ? "visible" : "hidden"}
-        transition={{ duration: 0.5, delay: 0.8 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
         variants={variants}
         className={styles.title}
       >

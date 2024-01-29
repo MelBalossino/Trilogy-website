@@ -19,7 +19,6 @@
     font-weight: 350;
     color: var(--color-white);
     margin-bottom: 0rem;
-
 }
 
 .container p {
@@ -32,7 +31,7 @@
 }
 
 .container h4 {
-    margin-top: 6rem;
+    margin-top: 12rem;
     color: var(--color-white);
     font-size: 1.15rem;
     font-weight: 400;
@@ -61,6 +60,7 @@
 @media (min-width: 1024px) {
     .container {
         padding: 7rem;
+        padding-bottom: 3rem;
         padding-left: 13rem;
     }
 

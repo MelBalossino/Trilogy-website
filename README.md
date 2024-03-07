@@ -1,4 +1,7 @@
 <h1 align="center"> Trilogy Solutions website </h1>
+<div align="center">
+   🚩 ESTADO: Finalizado
+</div>
 <br>
 <div align="center">
 <img src="./src/assets/ReadmeImages/Trilogy.PNG" alt="" width="1000px" />

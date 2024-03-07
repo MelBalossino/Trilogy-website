@@ -29,7 +29,7 @@ Puede obtener más información en la documentación:
 ## 🔎 Deploy
 <div align="center">
   <h3>
-    <a href="https://trilogy-website.vercel.app/" target="_blank" >
+    <a href="https://trilogy-web.vercel.app/" target="_blank" >
       🔗 Visitar Trilogy Solutions
     </a>
 </div>

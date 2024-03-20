@@ -1,10 +1,10 @@
 <h1 align="center"> Trilogy Solutions website </h1>
 <div align="center">
-   🚩 ESTADO: Finalizado
+   
+![Estado](https://img.shields.io/badge/Estado:-COMPLETO-green)
 </div>
-<br>
 <div align="center">
-<img src="./src/assets/ReadmeImages/Trilogy.PNG" alt="" width="1000px" />
+<img src="src\assets\ReadmeImages\responsive.PNG" alt="" width="1000px" />
 </div>
 
 ## 💻 Sobre el proyecto
